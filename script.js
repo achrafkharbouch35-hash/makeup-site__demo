@@ -4,7 +4,7 @@
 
 const SHOP_NAME = "ÉLÉA BEAUTY";
 const WHATSAPP_NUMBER = "212600000000";
-const INSTAGRAM_URL = "https://instagram.com/elea.beauty";
+const INSTAGRAM_URL = "https://instagram.com/.beauty";
 
 const PRODUCTS = [
  {id:1,name:"Velvet Nude Lipstick",category:"Lèvres",price:129,oldPrice:159,badge:"Best-seller",image:"https://images.unsplash.com/photo-1586495777744-4413f21062fa?auto=format&fit=crop&w=800&q=85",description:"Un rouge à lèvres crémeux et élégant avec une finition douce et confortable."},
