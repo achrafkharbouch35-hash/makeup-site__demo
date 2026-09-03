@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÉLÉA BEAUTY | Makeup & Beauty</title>
+<meta name="description" content="Éléa Beauty - Maquillage et beauté au Maroc">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="announcement">✦ Livraison partout au Maroc ✦</div>
+  <nav class="navbar">
+    <a href="#" class="logo"><span>ÉLÉA</span><small>BEAUTY</small></a>
+    <div class="nav-links">
+      <a href="#home">Accueil</a><a href="#shop">Boutique</a><a href="#categories">Catégories</a><a href="#about">À propos</a><a href="#instagram">Instagram</a>
+    </div>
+    <div class="nav-actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Rechercher">⌕</button>
+      <button class="icon-btn cart-button" id="cartBtn" aria-label="Panier">♧<span id="cartCount">0</span></button>
+      <a class="instagram-btn" id="instagramLink" href="#" target="_blank">Instagram</a>
+    </div>
+    <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Accueil</a><a href="#shop">Boutique</a><a href="#categories">Catégories</a><a href="#about">À propos</a><a href="#instagram">Instagram</a>
+  </div>
+</header>
+
+<div class="search-overlay" id="searchOverlay">
+  <div class="search-box"><button class="close-search" id="closeSearch">×</button><p>RECHERCHE</p><input type="text" id="searchInput" placeholder="Rechercher un produit..."></div>
+</div>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <p class="eyebrow">BEAUTY • MAKEUP • SELF LOVE</p>
+    <h1>Révélez votre <em>beauté.</em></h1>
+    <p class="hero-description">Découvrez notre sélection de maquillage pensée pour sublimer votre beauté, chaque jour.</p>
+    <div class="hero-buttons"><a href="#shop" class="btn btn-dark">Découvrir la boutique</a><a href="#" id="heroInstagram" class="btn btn-outline" target="_blank">Suivre sur Instagram</a></div>
+  </div>
+  <div class="hero-image"><div class="hero-badge"><strong>NEW</strong><span>Collection</span></div></div>
+</section>
+
+<section class="section categories-section" id="categories">
+  <div class="section-heading"><div><p class="eyebrow">SHOP BY CATEGORY</p><h2>Tout pour votre beauté</h2></div><p>Des essentiels beauté soigneusement sélectionnés.</p></div>
+  <div class="categories">
+    <button class="category-card" data-category="Lèvres"><div class="category-image lips-image"></div><span>Lèvres</span></button>
+    <button class="category-card" data-category="Teint"><div class="category-image face-image"></div><span>Teint</span></button>
+    <button class="category-card" data-category="Yeux"><div class="category-image eyes-image"></div><span>Yeux</span></button>
+    <button class="category-card" data-category="Blush"><div class="category-image blush-image"></div><span>Blush</span></button>
+  </div>
+</section>
+
+<section class="section shop-section" id="shop">
+  <div class="section-heading shop-heading">
+    <div><p class="eyebrow">OUR COLLECTION</p><h2>Nos produits</h2></div>
+    <div class="shop-controls">
+      <button class="filter-btn active" data-filter="Tous">Tous</button>
+      <button class="filter-btn" data-filter="Lèvres">Lèvres</button>
+      <button class="filter-btn" data-filter="Teint">Teint</button>
+      <button class="filter-btn" data-filter="Yeux">Yeux</button>
+      <button class="filter-btn" data-filter="Blush">Blush</button>
+    </div>
+  </div>
+  <div class="products-grid" id="productsGrid"></div>
+</section>
+
+<section class="promo"><div class="promo-image"></div><div class="promo-content"><p class="eyebrow">YOUR BEAUTY, YOUR STYLE</p><h2>Parce que chaque détail <em>compte.</em></h2><p>Des produits choisis avec soin pour créer les looks que vous aimez.</p><a href="#shop" class="btn btn-light">Explorer la collection</a></div></section>
+
+<section class="section benefits" id="about">
+  <div class="section-heading centered"><p class="eyebrow">WHY ÉLÉA BEAUTY</p><h2>Une expérience beauté différente</h2></div>
+  <div class="benefits-grid">
+    <div class="benefit"><div class="benefit-icon">✦</div><h3>Sélection soignée</h3><p>Nous sélectionnons nos produits avec attention.</p></div>
+    <div class="benefit"><div class="benefit-icon">♡</div><h3>Pour vous</h3><p>Des produits adaptés aux envies de chaque cliente.</p></div>
+    <div class="benefit"><div class="benefit-icon">✈</div><h3>Livraison Maroc</h3><p>Commandez facilement depuis n'importe quelle ville.</p></div>
+    <div class="benefit"><div class="benefit-icon">☏</div><h3>Commande facile</h3><p>Une commande rapide directement via WhatsApp.</p></div>
+  </div>
+</section>
+
+<section class="instagram-section" id="instagram">
+  <div class="section-heading centered"><p class="eyebrow">@ELEA.BEAUTY</p><h2>Suivez-nous sur Instagram</h2><p>Découvrez nos nouveautés, nos looks et nos inspirations.</p></div>
+  <div class="instagram-grid"><div class="insta-photo insta1"></div><div class="insta-photo insta2"></div><div class="insta-photo insta3"></div><div class="insta-photo insta4"></div><div class="insta-photo insta5"></div><div class="insta-photo insta6"></div></div>
+  <div class="instagram-center"><a href="#" id="instagramBottom" target="_blank" class="btn btn-dark">@elea.beauty</a></div>
+</section>
+
+<section class="section testimonials">
+  <div class="section-heading centered"><p class="eyebrow">LOVE FROM OUR CLIENTS</p><h2>Ce que nos clientes disent</h2></div>
+  <div class="reviews">
+    <article class="review"><div class="stars">★★★★★</div><p>"Les produits sont magnifiques et la commande était super simple. Je recommande !"</p><strong>— Sarah</strong></article>
+    <article class="review"><div class="stars">★★★★★</div><p>"Très belle qualité et livraison rapide. Je commanderai encore."</p><strong>— Imane</strong></article>
+    <article class="review"><div class="stars">★★★★★</div><p>"J'adore le concept et surtout le service via Instagram et WhatsApp."</p><strong>— Lina</strong></article>
+  </div>
+</section>
+
+<section class="newsletter"><p class="eyebrow">STAY BEAUTIFUL</p><h2>Recevez nos nouveautés</h2><p>Inscrivez-vous pour découvrir nos nouvelles collections.</p><form id="newsletterForm"><input type="email" placeholder="Votre adresse email" required><button type="submit">S'inscrire</button></form><span id="newsletterMessage"></span></section>
+</main>
+
+<footer>
+  <div class="footer-main">
+    <div class="footer-brand"><a href="#" class="logo"><span>ÉLÉA</span><small>BEAUTY</small></a><p>Votre beauté. Votre style. Votre confiance.</p></div>
+    <div class="footer-column"><h4>Boutique</h4><a href="#shop">Tous les produits</a><a href="#shop">Nouveautés</a><a href="#shop">Best-sellers</a></div>
+    <div class="footer-column"><h4>Aide</h4><a href="#">Livraison</a><a href="#">Commandes</a><a href="#">Contact</a></div>
+    <div class="footer-column"><h4>Suivez-nous</h4><a href="#" id="footerInstagram" target="_blank">Instagram</a><a href="#" id="footerWhatsApp" target="_blank">WhatsApp</a></div>
+  </div>
+  <div class="footer-bottom">© 2026 Éléa Beauty — Tous droits réservés.</div>
+</footer>
+
+<div class="product-modal" id="productModal"><div class="modal-overlay" id="modalOverlay"></div><div class="product-modal-content"><button class="modal-close" id="modalClose">×</button><div class="modal-product-image" id="modalProductImage"></div><div class="modal-product-info"><p class="eyebrow" id="modalCategory"></p><h2 id="modalName"></h2><div class="modal-price" id="modalPrice"></div><p id="modalDescription"></p><div class="quantity"><button id="minusQuantity">−</button><span id="quantityValue">1</span><button id="plusQuantity">+</button></div><button class="btn btn-dark full-btn" id="modalAddCart">Ajouter au panier</button><button class="whatsapp-order" id="modalWhatsApp">Commander via WhatsApp</button></div></div></div>
+
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart" id="cart"><div class="cart-header"><div><p class="eyebrow">YOUR BAG</p><h2>Votre panier</h2></div><button id="closeCart">×</button></div><div class="cart-items" id="cartItems"></div><div class="cart-footer"><div class="cart-total"><span>Total</span><strong id="cartTotal">0 DH</strong></div><button class="btn btn-dark full-btn" id="checkoutBtn">Commander via WhatsApp</button><button class="clear-cart" id="clearCart">Vider le panier</button></div></aside>
+<div class="toast" id="toast">Produit ajouté au panier ✓</div>
+<script src="script.js"></script>
+</body>
+</html>
